@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace GanjilGenap
 {
-    internal class Class2
+    internal class MessageConverting
     {
+        public int number ;
+        public string message;
     }
 }

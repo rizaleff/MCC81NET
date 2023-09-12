@@ -117,7 +117,7 @@ namespace GanjilGenap
         }
         static void Main(string[] args)
         {
-            MessageConverting messageConverting = StringToInt("10");
+            
             Menu();
         }
 

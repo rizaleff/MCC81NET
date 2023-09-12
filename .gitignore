@@ -396,3 +396,6 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+ConsoleApp1/Program.cs
+ConsoleApp1/Program.cs
+ConsoleApp1/MessageConverting.cs

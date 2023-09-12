@@ -1,4 +1,4 @@
-﻿
+﻿/*
 using System.Collections.Generic;
 
 namespace GanjilGenap;
@@ -22,7 +22,7 @@ class Program
             case "1":
                 Console.Write("Masukkan bilangan yang ingin dicek: ");
                 string inputNumber = Console.ReadLine();
-                StringToInt(inputNumber, EvenOddCheck())
+                StringToInt(inputNumber, EvenOddCheck());
                 Menu();
                 break;
 
@@ -126,7 +126,7 @@ class Program
         }
     }
 
-    /* static MessageConverting StringToInt(string inputNumber)
+    *//* static MessageConverting StringToInt(string inputNumber)
      {
          MessageConverting messageConverting = new MessageConverting();
          try
@@ -153,5 +153,5 @@ class Program
     {
         MessageConverting messageConverting = StringToInt("10");
         Menu();
-    }*/
-}
+    }*//*
+}*/
