@@ -71,6 +71,7 @@ namespace GanjilGenap
         static void PrintEvenOdd(int limit, string choice)
         {
             Console.WriteLine("Print Bilangan 1 - " + limit);
+
             CheckNumber(limit);
 
             switch (choice)
@@ -113,6 +114,11 @@ namespace GanjilGenap
             {
                 Console.Write(i + ", ");
             }
+        }
+        static void Main(string[] args)
+        {
+            MessageConverting messageConverting = StringToInt("10");
+            Menu();
         }
 
     }

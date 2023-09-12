@@ -22,7 +22,7 @@ class Program
             case "1":
                 Console.Write("Masukkan bilangan yang ingin dicek: ");
                 string inputNumber = Console.ReadLine();
-                Console.WriteLine(EvenOddCheck(inputNumber));
+                StringToInt(inputNumber, EvenOddCheck())
                 Menu();
                 break;
 
@@ -50,7 +50,6 @@ class Program
 
     static void PrintEvenOdd(string inputLimit, string choice)
     {
-        
 
         Console.WriteLine("Print Bilangan 1 - " + inputLimit);
         
@@ -72,12 +71,11 @@ class Program
         }
     }
 
-    static string EvenOddCheck(string inputNumber)
+    static string EvenOddCheck(int input)
     {
-        int number = StringToNumber(inputNumber);
-        CheckNumber(number);
+        CheckNumber(input);
 
-        if (number % 2 == 0)
+        if (input % 2 == 0)
         {
             return "Genap";
         }
@@ -114,27 +112,46 @@ class Program
         }
     }
 
-    static MessageConverting StringToInt(string inputNumber)
+    static void StringToInt(string inputNumber, Action<int> action)
     {
-        MessageConverting messageConverting = new MessageConverting();
+        int number;
         try
         {
-             
-             messageConverting.number = Convert.ToInt32(inputNumber);
-             messageConverting.message = "Sukes";
-             return messageConverting;
+            number = Convert.ToInt32(inputNumber);
+            action(number);
         }
         catch (FormatException)
         {
-            messageConverting.message = "Input Harus Berupa angka";
-            return messageConverting;
+            Console.WriteLine("Input Harus Berupa angka");
         }
-        
     }
 
-    static void Main(string[] args)
+    /* static MessageConverting StringToInt(string inputNumber)
+     {
+         MessageConverting messageConverting = new MessageConverting();
+         try
+         {
+
+             messageConverting.number = Convert.ToInt32(inputNumber);
+             messageConverting.message = "Sukes";
+
+             if(messageConverting.number <= 0)
+             {
+                 messageConverting.message = "Input Harus Lebih dari 1";
+             }
+             return messageConverting;
+         }
+         catch (FormatException)
+         {
+             messageConverting.message = "Input Harus Berupa angka";
+             return messageConverting;
+         }
+
+     }*/
+
+   /* static void Main(string[] args)
     {
-        MessageConverting messageConverting =  StringToInt("10");
-        Menu()
-    }
+        MessageConverting messageConverting = StringToInt("10");
+        Menu();
+    }*/
 }
