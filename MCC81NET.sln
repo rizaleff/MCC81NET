@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34024.191
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GanjilGenap", "ConsoleApp1\GanjilGenap.csproj", "{45761601-E7C4-44DE-B5D5-A96F95B7E066}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GanjilGenap", "GanjilGenap\GanjilGenap.csproj", "{45761601-E7C4-44DE-B5D5-A96F95B7E066}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LatihanOOP", "LatihanOOP\LatihanOOP.csproj", "{76BA78CF-3A18-424F-9472-69D4E9F3D4C3}"
 EndProject
