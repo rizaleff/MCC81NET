@@ -115,11 +115,7 @@ namespace GanjilGenap
                 Console.Write(i + ", ");
             }
         }
-        static void Main(string[] args)
-        {
-            
-            Menu();
-        }
+
 
     }
 }

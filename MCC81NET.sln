@@ -5,7 +5,9 @@ VisualStudioVersion = 17.7.34024.191
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GanjilGenap", "GanjilGenap\GanjilGenap.csproj", "{45761601-E7C4-44DE-B5D5-A96F95B7E066}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LatihanOOP", "LatihanOOP\LatihanOOP.csproj", "{76BA78CF-3A18-424F-9472-69D4E9F3D4C3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LatihanOOP", "LatihanOOP\LatihanOOP.csproj", "{76BA78CF-3A18-424F-9472-69D4E9F3D4C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LatihanGenericCollections", "LatihanGenericCollections\LatihanGenericCollections.csproj", "{356EA5D8-0003-40D9-98B9-A7C07590DFAC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{76BA78CF-3A18-424F-9472-69D4E9F3D4C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{76BA78CF-3A18-424F-9472-69D4E9F3D4C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{76BA78CF-3A18-424F-9472-69D4E9F3D4C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{356EA5D8-0003-40D9-98B9-A7C07590DFAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{356EA5D8-0003-40D9-98B9-A7C07590DFAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{356EA5D8-0003-40D9-98B9-A7C07590DFAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{356EA5D8-0003-40D9-98B9-A7C07590DFAC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
