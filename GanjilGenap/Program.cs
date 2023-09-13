@@ -8,7 +8,7 @@ namespace GanjilGenap
 {
     internal class Program
     {
-        static void Menu()
+        public static void Menu()
         {
             Console.WriteLine();
             Console.WriteLine("=========================================");
@@ -57,6 +57,7 @@ namespace GanjilGenap
 
                 case "3":
                     Console.WriteLine("Keluar dari aplikasi.....");
+                    BasicAuthentication.AuthenticationMenu();
                     break;
 
                 default:
@@ -68,7 +69,7 @@ namespace GanjilGenap
             Console.WriteLine();
         }
 
-        static void PrintEvenOdd(int limit, string choice)
+        public static void PrintEvenOdd(int limit, string choice)
         {
             Console.WriteLine("Print Bilangan 1 - " + limit);
 
@@ -88,7 +89,7 @@ namespace GanjilGenap
             }
         }
 
-        static string EvenOddCheck(int input)
+        public static string EvenOddCheck(int input)
         {
             CheckNumber(input);
 
@@ -99,7 +100,7 @@ namespace GanjilGenap
             return "Ganjil";
 
         }
-        static void CheckNumber(int number)
+        public static void CheckNumber(int number)
         {
             if (number <= 0)
             {
@@ -108,7 +109,7 @@ namespace GanjilGenap
             }
         }
 
-        static void PrintLoop(int startNumber, int limit)
+        public static void PrintLoop(int startNumber, int limit)
         {
             for (int i = startNumber; i <= limit; i += 2)
             {
