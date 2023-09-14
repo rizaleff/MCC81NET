@@ -40,7 +40,7 @@ namespace GanjilGenap
                 {
                     case "1":
                         Console.Clear();
-                        FieldInputData(userDataManager.AddUser);
+                        FieldInputData(userDataManager.AddUser, userDataManager.Users.Count + 1);
                         break;
                     case "2":
                         Console.Clear();
