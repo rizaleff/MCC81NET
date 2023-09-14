@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace GanjilGenap
 {
-    internal class Program
+    internal class GanjilGenapProgram
     {
-        public static void Menu()
+        public void Menu()
         {
             Console.WriteLine();
             Console.WriteLine("=========================================");
@@ -69,7 +69,7 @@ namespace GanjilGenap
             Console.WriteLine();
         }
 
-        public static void PrintEvenOdd(int limit, string choice)
+        static void PrintEvenOdd(int limit, string choice)
         {
             Console.WriteLine("Print Bilangan 1 - " + limit);
 
@@ -89,7 +89,7 @@ namespace GanjilGenap
             }
         }
 
-        public static string EvenOddCheck(int input)
+        static string EvenOddCheck(int input)
         {
             CheckNumber(input);
 
@@ -100,16 +100,15 @@ namespace GanjilGenap
             return "Ganjil";
 
         }
-        public static void CheckNumber(int number)
+        static void CheckNumber(int number)
         {
             if (number <= 0)
             {
                 Console.WriteLine("Input Tidak Sesuai");
-                Menu();
             }
         }
 
-        public static void PrintLoop(int startNumber, int limit)
+        static void PrintLoop(int startNumber, int limit)
         {
             for (int i = startNumber; i <= limit; i += 2)
             {
